@@ -5,18 +5,18 @@
     "config_path": "/etc/prometheus/prometheus.yml",
     "date_created": "2024-05-02",
     "default_credentials": {
-        "password": "password",
-        "username": "pi"
+        "password": null,
+        "username": null
     },
     "description": "Prometheus is widely used to monitor the performance and health of various infrastructure components and applications, and trigger alerts based on predefined rules. It has a multi-dimensional data model and supports various data sources and exporters, making it an extremely flexible and scalable monitoring solution.",
     "documentation": null,
     "install_methods": [
         {
             "resources": {
-                "cpu": 1,
-                "hdd": 4,
+                "cpu": 2,
+                "hdd": 30,
                 "os": "debian",
-                "ram": 2048,
+                "ram": 4096,
                 "version": "12"
             },
             "script": "ct/prometheus.sh",
@@ -24,10 +24,10 @@
         },
         {
             "resources": {
-                "cpu": 1,
-                "hdd": 1,
+                "cpu": 2,
+                "hdd": 30,
                 "os": "alpine",
-                "ram": 256,
+                "ram": 4096,
                 "version": "3.21"
             },
             "script": "ct/alpine-prometheus.sh",
